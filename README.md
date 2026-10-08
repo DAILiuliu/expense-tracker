@@ -8,6 +8,7 @@ I built this while learning Python with Stanford's Code in Place.
 - Record daily expenses by category (food, transport, fun, daily, study, phone, housing)
 - Warn when you type a category that doesn't exist
 - Show the total for each category at the end
+- Show total spending and check it against a monthly budget
 
 ## How to run
 
@@ -24,7 +25,6 @@ Type a category and an amount for each expense. Type `done` when you are finishe
 
 ## Next steps
 
-- [ ] Show total spending and check it against a monthly budget of 300,000 yen
+- [x] Show total spending and check it against a monthly budget of 300,000 yen
 - [ ] Handle non-number input for the amount
-- [ ] Save records to a file# expense-tracker
-A simple expense tracker written in Python
+- [ ] Save records to a file

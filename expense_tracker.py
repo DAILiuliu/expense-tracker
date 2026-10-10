@@ -11,8 +11,11 @@ while category != "done":
         break
 
     if category in totals:
-        money = int(input("Amount: "))
-        totals[category] += money
+        try:
+            money = int(input("Amount: "))
+            totals[category] += money
+        except ValueError:
+            print("请输入数字")
     else:
         print("没有这个类别，请重新输入")
 
@@ -27,3 +30,9 @@ if spent>budget:
 
 else:
     print("Budget left:",budget - spent, "yen" )
+
+if spent ==0:
+    print("No expense recorded yet")
+else:
+    biggest_expense = max(totals, key=totals.get)
+    print("biggest_expanse:" , biggest_expense , totals[biggest_expense] , "yen")
